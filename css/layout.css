@@ -1,0 +1,741 @@
+/* ---------------------------------------------- TYPOGRAPHY ---------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* DEFININDO PESOS */
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* ---------------------------------------------- COLORS ---------------------------------------------------- */
+
+:root {
+
+    /* PRINCIPAIS */
+    --bg-color: #0b0b0b;
+    --text-color: #f5f5f5;
+    --accent-color: #ff3e00;
+
+    /* COM MENOS OPACIDADE */
+    --faded-color: color-mix(in srgb, var(--text-color), transparent 40%);
+    --ghost-color: color-mix(in srgb, var(--text-color), transparent 80%);
+    --invisible-color: color-mix(in srgb, var(--text-color), transparent 95%);
+
+}
+
+/* ---------------------------------------------- GLOBAL ---------------------------------------------------- */
+
+* {
+    /* resetting defaults */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Roboto, sans-serif; /*tipografia*/
+    line-height: 1.6; /* default line height */
+}
+
+main {
+    margin-top: 120px; /*TOP MARGIN FOR NAVBAR*/
+}
+
+
+/* 1. For modern browsers (Chrome, Edge, Firefox, Safari) */
+::selection {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* 2. For older versions of Firefox */
+::-moz-selection {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+
+/* ----------------------------------------------- HOMEPAGE ------------------------------------------------ */
+
+#work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /*change min to change card size!!! */
+    gap: 20px;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    /* background: var(--card-bg); */
+    background: var(--invisible-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    /* margin-top: 12px; */
+    padding: 10px;
+    font-size: 0.85rem;      /* Smaller text feels more "high-end" */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;   /* Gives it room to breathe */
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+/* Change the color of the title when the WHOLE card is hovered */
+.project-card:hover h3 {
+    color: var(--accent-color);
+}
+
+
+/* ------------------------ */
+/* FADE IN PROJECT CARDS ON HOMEPAGE */
+
+#project-content, #work-grid {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ----------------------------------------------PROJECT PAGE--------------------------------------------------- */
+
+
+/* This is the master wrapper for the whole project page */
+#project-content {
+    max-width: 1280px; /* Wider for high-end screens */
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    animation: fadeIn 0.8s ease forwards;
+
+    /* border: solid 1px red; */
+}
+
+.project-header {
+    
+    max-width: 800px; /* Keeps the intro text from stretching too wide */
+    margin-bottom: 50px; /* Space between the intro and the first block */
+
+    /* border: solid 1px red; */
+
+
+}
+
+
+/* --- PROJECT CATEGORIES --- */
+
+.project-categories {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.project-categories li {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color); /* Uses your brand color */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+/* Add a small separator dot between items, but not after the last one */
+.project-categories li:not(:last-child)::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-left: 15px;
+}       
+
+.project-title {
+
+    /* border: solid 1px purple; */
+
+    margin-bottom: 10px;
+
+
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Responsive: gets smaller on mobile */
+    line-height: 0.8;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+
+
+}
+
+
+/* PROJECT PAGE BLOCKS */
+
+.project-body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Adjust this value to change the "rhythm" of your whole page */
+    margin-bottom: 50px; /* Space before the credits start */
+}
+
+
+/* ----VIDEO BLOCK ---- */
+.video-block {
+    position: relative;
+    width: 100%;
+    
+    /* REMOVE THESE OLD LINES: */
+    /* padding-bottom: 56.25%; */
+    /* height: 0; */
+
+    /* ADD THIS MODERN LINE: */
+    aspect-ratio: 16 / 9; 
+
+    background: var(--bg-color);
+    border-radius: 4px;
+    overflow: hidden;
+    
+    /* Keep your debug border if you want */
+    /* border: solid 2px red; */
+}
+
+.video-block iframe {
+    /* No changes needed here, but ensure top/left are 0 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ----GRID BLOCK ---- */
+.grid-block {
+    display: grid;
+    grid-template-columns: repeat(var(--columns, 3), 1fr);
+    gap: 20px;
+    /* This ensures children try to fill the full height of the row */
+    align-items: stretch; 
+}
+
+/* THE CROPPER: For Images and Local Videos */
+.grid-block img, 
+.grid-block video.grid-item {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* This is the auto-crop magic */
+    border-radius: 4px;
+    display: block;
+}
+
+/* THE ANCHOR: The YouTube Container */
+.grid-youtube {
+    position: relative;
+    width: 100%;
+    /* This forces the 16:9 shape without cropping the UI */
+    aspect-ratio: 16 / 9; 
+}
+
+.grid-youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: none;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .grid-block {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    /* Target standard items like images */
+    .grid-item {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* NEW: Prevent YouTube and Video containers from collapsing */
+    .grid-youtube, 
+    .video-block {
+        aspect-ratio: 16 / 9 !important; /* Forces the box open */
+        height: auto !important; 
+        width: 100% !important;
+    }
+
+    /* This keeps images and local videos behaving normally */
+    .grid-item:not(.grid-youtube) {
+        aspect-ratio: auto !important; 
+        height: auto;
+    }
+}
+
+/* ----TEXT BLOCK ---- */
+
+/* The wrapper for text blocks */
+.text-block {
+    display: flex;
+    justify-content: center; /* Centers the whole block */
+}
+
+.text-container {
+    max-width: 760px; /* The "Magic Number" for readability */
+    padding: 0px 30px;
+    width: 100%;
+}
+
+/* The optional headline inside text blocks */
+.text-block-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent-color);
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+/* The paragraph itself */
+.text-content p {
+    font-size: 1.15rem;
+    line-height: 1.8; /* Increased breathing room */
+    color: var(--text-color);
+    font-weight: 400;
+    /* This creates a nice "Ragged Right" edge for a studio look */
+    text-align: left; 
+}
+
+/* If you have multiple paragraphs in one block */
+.text-content p + p {
+    margin-top: 1.5rem;
+}
+
+/* ----CREDITS ---- */
+
+.project-credits {
+    max-width: 760px; /* Matching your text-block width */
+    margin: 0px auto; /* Centered with breathing room */
+    border-top: 1px solid var(--invisible-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.credit-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--invisible-color);
+}
+
+.credit-row:last-child {
+    border-bottom: none;
+}
+
+.credit-role {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ghost-color);
+    font-weight: 500;
+}
+
+.credit-name {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* Mobile: Stack them if it gets too tight */
+@media (max-width: 480px) {
+    .credit-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+/* PROJECT PAGE FOOTER */
+
+.project-footer {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 1px solid var(--faded-color);
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+
+
+
+/* ---------------------------------------------------NAVBAR-------------------------------------------------- */
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* This creates the blur effect through the bar */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: color-mix(in srgb, var(--bg-color), transparent 30%);;
+    border-bottom: 1px solid var(--invisible-color);
+}
+
+.nav-container {
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    opacity: 1;
+}
+
+.nav-item.active {
+    opacity: 1;
+}
+
+/* Specific styling for a "Contact" button look */
+.contact-btn {
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.contact-btn:hover {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+
+
+/* ----- LANG SWITCHER ------- */
+
+/* Simply uncomment this line to hide the switcher for deployment */
+.lang-switcher { 
+    display: none !important; 
+}
+
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif; /* Use your clean sans-serif */
+}
+
+.lang-switcher button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: 0.4; /* Inactive state is faded */
+    transition: all 0.3s ease;
+}
+
+.lang-switcher .separator {
+    font-size: 0.7rem;
+    opacity: 0.2;
+    user-select: none;
+}
+
+/* Hover effect */
+.lang-switcher button:hover {
+    opacity: 0.8;
+}
+
+/* THE MAGIC: The Active State */
+.lang-switcher button.active {
+    opacity: 1;
+    font-weight: 700;
+    /* Optional: add a tiny dot below the active language */
+    position: relative;
+}
+
+.lang-switcher button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* --- Mobile Styles --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Minimalist 2-line hamburger */
+    .bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: var(--text-color);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Animate to X when active */
+    .menu-toggle.active .bar:nth-child(1) { transform: translateY(4px) rotate(45deg); }
+    .menu-toggle.active .bar:nth-child(2) { transform: translateY(-4px) rotate(-45deg); }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden by default */
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-color);
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        right: 0; /* Slide in */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .nav-item {
+        font-size: 1.5rem; /* Larger links for thumbs */
+    }
+
+    .lang-switcher {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* -------------------------------------------------- ABOUT PAGE -------------------------------------------------------- */
+
+
+/* --- ABOUT PAGE CONTAINER --- */
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 160px 20px 80px; /* Extra top padding for the navbar */
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Text side is slightly wider */
+    gap: 80px;
+    align-items: start;
+}
+
+/* --- IMAGE STYLING --- */
+
+.about-image {
+    position: sticky; /* Image stays in view as you read long bios */
+    top: 160px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Matching your project cards */
+    filter: grayscale(100%); /* Optional: pro look, turns color on hover */
+    transition: filter 0.5s ease;
+}
+
+.about-image img:hover {
+    filter: grayscale(0%);
+}
+
+/* --- TEXT STYLING --- */
+
+.about-text h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--faded-color);
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--ghost-color);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        position: relative;
+        top: 0;
+        max-width: 400px; /* Don't let the profile pic get too huge on mobile */
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem;
+    }
+}
