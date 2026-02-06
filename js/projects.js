@@ -82,11 +82,11 @@ const projects = [
         title: "Think With Google",
         categories: ['Motion Design', '3D'],
         folder: '../assets/tap-to-pay-zoop/',
-        preview: "https://res.cloudinary.com/dr5dbkh91/video/upload/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4",
+        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770339433/Preview_Google_x0igus.mp4",
         content: [
             {
                 type: "video",
-                id: "NOVLNrncpYw",
+                id: "Rt7nvTDHXXA",
                 caption: { pt: "Entrega principal", en: "Main deliverable" }
             },
             {
@@ -97,13 +97,18 @@ const projects = [
                 }
             },
             {
+                type: "video",
+                url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770338072/ThinkWithGoogle_KV05_v2_1_tdvccd.mp4",
+                caption: { pt: "Entrega principal", en: "Main deliverable" }
+            },
+            {
                 type: "grid",
-                columns: 3, // 1, 2, 3, ou 4
+                columns: 2, // 1, 2, 3, ou 4
                 assets: [
-                    { type: "image", url: "https://res.cloudinary.com/dr5dbkh91/image/upload/v1770302664/projects/tap-to-pay-zoop/ifnqtscoz8nadanqrjhd.png", span: 2, rowSpan: 2},
-                    { type: "video", url: "https://res.cloudinary.com/dr5dbkh91/video/upload/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4" }, // Local video
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770338072/ThinkWithGoogle_KV05_v2_1_tdvccd.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770338072/ThinkWithGoogle_KV05_v2_1_tdvccd.mp4" }, // Local video
                     //{ type: "video", src: "think-with-google-preview.mp4" }, // Local video
-                    { type: "image", url: "https://res.cloudinary.com/dr5dbkh91/image/upload/v1770302665/projects/tap-to-pay-zoop/jscmjpvr0s5zomlrmgd8.png"},
+                    
                 ]
             },
             {

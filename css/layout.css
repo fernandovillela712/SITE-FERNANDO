@@ -86,7 +86,7 @@ main {
 
 #work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /*change min to change card size!!! */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /*change min to change card size!!! */
     gap: 20px;
     padding: 40px;
     padding-top: 0px;
@@ -232,7 +232,7 @@ main {
     /* height: 0; */
 
     /* ADD THIS MODERN LINE: */
-    aspect-ratio: 16 / 9; 
+    /* aspect-ratio: 16 / 9;  */
 
     background: var(--bg-color);
     border-radius: 4px;
