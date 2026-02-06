@@ -91,6 +91,10 @@ const projects = [
             },
             {
                 type: "text",
+                title: {
+                    pt: "PROCESSO",
+                    en: "PROCESS",
+                },
                 text: { 
                     pt: "Este projeto foi focado em lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi", 
                     en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
