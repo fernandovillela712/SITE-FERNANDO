@@ -176,14 +176,14 @@ const projects = [
      //----------------------PROJETO 3-----------------------//
     {
         id: "compasso",
-        title: "Compasso | PLAU",
+        title: "ABDG | A Bodega",
         categories: ['Motion Design', '2D', 'TYPE'],
         folder: '../assets/tap-to-pay-zoop/',
-        preview: "https://res.cloudinary.com/dr5dbkh91/video/upload/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4",
+        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770414089/BODEGA_PREVIEW_gdjwav.mp4",
         content: [
             {
                 type: "video",
-                id: "NOVLNrncpYw",
+                id: "KhBn-tHSXBY",
                 caption: { pt: "Entrega principal", en: "Main deliverable" }
             },
             {
