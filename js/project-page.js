@@ -31,7 +31,7 @@ const Components = {
 
     video: (asset, folder, style = "", isFullWidth = false) => {
         const { src, poster } = resolveMedia(asset, folder, 'video');
-        const className = isFullWidth ? 'detail-video-full' : 'grid-item';
+        const className = isFullWidth ? 'video-block' : 'grid-item';
         return `
             <video autoplay loop muted playsinline class="${className}" ${style} ${poster ? `poster="${poster}"` : ''}>
                 <source src="${src}" type="video/mp4">
@@ -67,7 +67,7 @@ function renderProject(project, lang) {
                 const videoHTML = isCloudinary 
                     ? Components.video(block, project.folder, "", true)
                     : Components.youtube(block.id);
-                return `<section class="block video-block">${videoHTML}</section>`;
+                return `${videoHTML}`;
 
             case 'grid':
                 const assetsHTML = block.assets.map(asset => {

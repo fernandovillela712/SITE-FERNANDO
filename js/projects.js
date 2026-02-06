@@ -168,7 +168,7 @@ const projects = [
         content: [
             {
                 type: "video",
-                id: "NOVLNrncpYw",
+                id: "eg51pGfBrA8",
                 caption: { pt: "Entrega principal", en: "Main deliverable" }
             },
             {

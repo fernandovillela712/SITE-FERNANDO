@@ -32,9 +32,11 @@
     "wdth" 100;
 }
 
-/* ---------------------------------------------- COLORS ---------------------------------------------------- */
+/* ---------------------------------------------- VARIAVEIS ---------------------------------------------------- */
 
 :root {
+
+    /* ---------PALETA DE CORES----------- */
 
     /* PRINCIPAIS */
     --bg-color: #0b0b0b;
@@ -45,6 +47,10 @@
     --faded-color: color-mix(in srgb, var(--text-color), transparent 40%);
     --ghost-color: color-mix(in srgb, var(--text-color), transparent 80%);
     --invisible-color: color-mix(in srgb, var(--text-color), transparent 95%);
+
+
+    /* ---------LAYOUT----------- */
+    --gap-layout: 20px;
 
 }
 
@@ -217,14 +223,17 @@ main {
 .project-body {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Adjust this value to change the "rhythm" of your whole page */
+    gap: var(--gap-layout); /* Adjust this value to change the "rhythm" of your whole page */
     margin-bottom: 50px; /* Space before the credits start */
+
+    /* Keep your debug border if you want */
+    /* border: solid 1px greenyellow;  */
 }
 
 
 /* ----VIDEO BLOCK ---- */
 .video-block {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     
     /* REMOVE THESE OLD LINES: */
@@ -236,10 +245,9 @@ main {
 
     background: var(--bg-color);
     border-radius: 4px;
-    overflow: hidden;
     
     /* Keep your debug border if you want */
-    /* border: solid 2px red; */
+    /* border: solid 1px red;   */
 }
 
 .video-block iframe {
@@ -256,9 +264,11 @@ main {
 .grid-block {
     display: grid;
     grid-template-columns: repeat(var(--columns, 3), 1fr);
-    gap: 20px;
+    gap: var(--gap-layout);
     /* This ensures children try to fill the full height of the row */
     align-items: stretch; 
+
+    /* border: solid 1px paleturquoise;   */
 }
 
 /* THE CROPPER: For Images and Local Videos */
@@ -303,14 +313,6 @@ main {
         grid-row: span 1 !important;
     }
 
-    /* NEW: Prevent YouTube and Video containers from collapsing */
-    .grid-youtube, 
-    .video-block {
-        aspect-ratio: 16 / 9 !important; /* Forces the box open */
-        height: auto !important; 
-        width: 100% !important;
-    }
-
     /* This keeps images and local videos behaving normally */
     .grid-item:not(.grid-youtube) {
         aspect-ratio: auto !important; 
@@ -322,14 +324,19 @@ main {
 
 /* The wrapper for text blocks */
 .text-block {
+    margin: 30px 0px;
     display: flex;
     justify-content: center; /* Centers the whole block */
+
+    /* border: solid 1px orange; */
 }
 
 .text-container {
     max-width: 760px; /* The "Magic Number" for readability */
     padding: 0px 30px;
     width: 100%;
+
+    /* border: solid 1px orange; */
 }
 
 /* The optional headline inside text blocks */
