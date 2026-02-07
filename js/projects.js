@@ -189,57 +189,49 @@ const projects = [
             {
                 type: "text",
                 text: { 
-                    pt: "Este projeto foi focado em lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi", 
+                    pt: "Animacão desenvolvida para A Bodega, com foco na apresentação do rebrand e na tradução da nova identidade visual para motion.", 
                     en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
                 }
             },
+           {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770483862/LOGO_MORPH_xy3xus.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770414090/LOGO_NOVA_ANIMACAO_02_fjo4nr.mp4" }, // Local video
+                    //{ type: "video", src: "think-with-google-preview.mp4" }, // Local video
+                    
+                ]
+            },
             {
+                type: "text",
+                text: { 
+                    pt: "Criação de animações de logo, incluindo a transição da marca anterior para a nova versão e animações de logo independentes para diferentes aplicações.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+             {
+                type: "text",
+                text: { 
+                    pt: "A partir da nova identidade visual, desenvolvi uma motion language focada em tipografia animada, transições de layout e ritmo, garantindo consistência entre os vídeos.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+           {
                 type: "grid",
                 columns: 3, // 1, 2, 3, ou 4
                 assets: [
-                    { type: "image", url: "https://res.cloudinary.com/dr5dbkh91/image/upload/v1770302664/projects/tap-to-pay-zoop/ifnqtscoz8nadanqrjhd.png", span: 2, rowSpan: 2},
-                    { type: "video", url: "https://res.cloudinary.com/dr5dbkh91/video/upload/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4" }, // Local video
-                    //{ type: "video", src: "think-with-google-preview.mp4" }, // Local video
-                    { type: "image", url: "https://res.cloudinary.com/dr5dbkh91/image/upload/v1770302665/projects/tap-to-pay-zoop/jscmjpvr0s5zomlrmgd8.png"},
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770414091/LAYOUT_TESTE_wedm0t.mp4", span: 2, rowSpan: 2},
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770413064/LETTERING_d6ecx4.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770413063/TRANSICOES_yty5ap.mp4" },
                 ]
             },
-            {
-                type: "text",
-                text: { 
-                    pt: "Este projeto foi focado em lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi", 
-                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
-                }
-            },
-            {
-                type: "grid",
-                columns: 3, // 1, 2, 3, or 4
-                assets: [
-                    { type: "image", url: "https://res.cloudinary.com/dr5dbkh91/image/upload/v1770302664/projects/tap-to-pay-zoop/ifnqtscoz8nadanqrjhd.png"},
-                    { type: "video", url: "https://res.cloudinary.com/dr5dbkh91/video/upload/v1770302399/projects/tap-to-pay-zoop/h2tvnpjzra5wfsyr4gru.mp4" }, // Local video
-                    // { type: "youtube", id: "W-ecOI26z4A" }, // Local video
-                    { type: "image", url: "https://res.cloudinary.com/dr5dbkh91/image/upload/v1770302665/projects/tap-to-pay-zoop/jscmjpvr0s5zomlrmgd8.png"},
-                ]
-            },
-            {
-                type: "text",
-                text: { 
-                    pt: "Este projeto foi focado em lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi", 
-                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
-                }
-            },
-            {
-                type: "video",
-                id: "NOVLNrncpYw",
-                caption: { pt: "Processo", en: "Process" }
-            }
         ],
         credits: {
             pt: {
-                "Cliente": "Plau",
-                "Agência": "NOO",
-                "Direção de Arte": "Elon Musk",
+                "Cliente": "A Bodega",
+                "Direção de Arte": "Matheus Lima",
                 "Motion Design": "Fernando Villela",
-                "3D": "Judd Buchannan",
             },
             en: {
                 "Client": "Google",
