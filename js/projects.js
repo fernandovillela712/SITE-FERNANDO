@@ -175,7 +175,7 @@ const projects = [
     }, // -- FIM
      //----------------------PROJETO 3-----------------------//
     {
-        id: "compasso",
+        id: "abodega",
         title: "ABDG | A Bodega",
         categories: ['Motion Design', '2D', 'TYPE'],
         folder: '../assets/tap-to-pay-zoop/',
@@ -242,6 +242,110 @@ const projects = [
             },
         }
     }, // -- FIM
+ //----------------------PROJETO 4-----------------------//
+    {
+        id: "hairspray",
+        title: "Hairspray",
+        categories: ['Motion Design', '2D'],
+        folder: '../assets/hairspray/',
+        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770662860/HAIRSPRAY_PREVIEW_s5kud2.mp4",
+        content: [
+            {
+                type: "video",
+                id: "0CEHfAHyZso",
+                caption: { pt: "Entrega principal", en: "Main deliverable" }
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "Para a comunicação do musical Hairspray no Brasil, foram desenvolvidos materiais animados para integrar a identidade do musical aos canais digitais e peças de divulgação. O projeto seguiu a linguagem visual definida pelo cliente, adaptando seus elementos para animação.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+           {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664729/HAIRSPRAY_VINHETA_B_1_c8cyzl.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664729/HAIRSPRAY_VINHETA_C_1_r2zwpo.mp4" },
+                ]
+            },
+            {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664732/HAIRSPRAY_VINHETA_D_1_ip0k15.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770668693/HAIRSPRAY_VINHETA_E_1_myt4xh.mp4" },
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "A identidade do musical serviu como base para a construção das animações. Cores vibrantes, formas marcantes e elementos gráficos característicos foram explorados para criar peças dinâmicas, leves e expressivas, traduzindo em movimento o clima de alegria, energia e diversidade presentes no espetáculo.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+             {
+                type: "text",
+                text: { 
+                    pt: "A animação reforça o tom vibrante do Hairspray, transformando a linguagem gráfica em animações fluidas e versáteis para diferentes formatos e plataformas.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+             {
+                type: "grid",
+                columns: 3, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770668369/HAIRSPRAY_PERUCAS_9x16_A_1_cdzfpv.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770668369/HAIRSPRAY_PERUCAS_9x16_B_1_l81oni.mp4" }, 
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770668370/HAIRSPRAY_PERUCAS_9x16_C_1_n1vaor.mp4" },
+                    
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "Fui responsável pela animação de vinhetas, transições, gifs e assets visuais, criando peças modulares para uso em diferentes contextos de comunicação. Atuei na adaptação da identidade visual para motion em diferentes formatos, garantindo consistência estética e dinamismo nas animações.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+           {
+                type: "grid",
+                columns: 3, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664733/HAIRSPRAY_BUG_s3oqmn.mp4", span: 2, rowSpan: 2},
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664728/Sticker_oritmomechama_zrastq.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664728/Sticker_spark_mbmtou.mp4" },
+                ]
+            },
+            {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664727/Sticker_hora_de_brilhar_jpjcrg.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664726/Sticker_emcartaz_tbsyrq.mp4" }, 
+                    
+                ]
+            },
+        ],
+        credits: {
+            pt: {
+                "Cliente": "A Bodega",
+                "Direção de Arte": "Matheus Lima",
+                "Motion Design": "Fernando Villela",
+            },
+            en: {
+                "Client": "Google",
+                "Studio": "JUDD*NANDO",
+                "Art Direction": "Elon Musk",
+                "Motion Design": "Fernando Villela",
+                "3D": "Judd Buchannan",
+            },
+        }
+    }, // -- FIM
 ]
+
 
 export { projects }
