@@ -164,7 +164,7 @@ main {
 
 .project-header {
     
-    max-width: 800px; /* Keeps the intro text from stretching too wide */
+    /* Keeps the intro text from stretching too wide */
     margin-bottom: 50px; /* Space between the intro and the first block */
 
     /* border: solid 1px red; */
@@ -215,8 +215,9 @@ main {
     letter-spacing: -0.03em;
 
 
-}
+    /* border: solid 1px red; */
 
+}
 
 /* PROJECT PAGE BLOCKS */
 
@@ -258,6 +259,25 @@ main {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+
+/* full width */
+.video-block.is-full-width {
+    width: 100vw;
+    /* height: 100%; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Better breakout method */
+
+    border: solid 1px red;
+}
+
+.video-block.is-full-width .u-video-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto; 
+    min-height: 18.53vw;
 }
 
 /* ----GRID BLOCK ---- */

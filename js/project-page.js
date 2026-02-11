@@ -38,12 +38,30 @@ const Components = {
             </video>`;
     },
 
-    youtube: (id, style = "") => `
+    youtube: (id, style = "") => {
+        return `
         <div class="grid-youtube grid-item" ${style}>
             <iframe src="https://www.youtube.com/embed/${id}?rel=0" frameborder="0" allowfullscreen loading="lazy"></iframe>
-        </div>`
+        </div>`;
+    },
+    
+    vimeo: (id) => {
+        console.log("Rendering Vimeo with ID:", id); // DEBUG LOG
+        if (!id) return `<div style="color:red;">Error: Vimeo ID Missing</div>`;
+        
+        return `
+        <div class="u-video-frame">
+            <iframe 
+                src="https://player.vimeo.com/video/${id}?badge=0&autopause=0" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen 
+                style="width:100%; height:100%;"
+                title="Vimeo Video">
+            </iframe>
+        </div>`;
+    }
 };
-
 /**
  * MAIN RENDERER
  */
@@ -64,10 +82,19 @@ function renderProject(project, lang) {
 
             case 'video':
                 const isCloudinary = block.url && block.url.includes('cloudinary.com');
-                const videoHTML = isCloudinary 
-                    ? Components.video(block, project.folder, "", true)
-                    : Components.youtube(block.id);
-                return `${videoHTML}`;
+                const isVimeo = block.vimeoId; // Check if it's a Vimeo ID
+                const isFullWidth = block.fullWidth === true ? 'is-full-width' : '';
+
+                let videoHTML = "";
+                if (isVimeo) {
+                    videoHTML = Components.vimeo(block.vimeoId);
+                } else if (isCloudinary) {
+                    videoHTML = Components.video(block, project.folder, "", true);
+                } else {
+                    videoHTML = Components.youtube(block.id);
+                }
+
+                return `<section class="block video-block ${isFullWidth}">${videoHTML}</section>`;
 
             case 'grid':
                 const assetsHTML = block.assets.map(asset => {

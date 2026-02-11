@@ -101,8 +101,8 @@ const projects = [
         content: [
             {
                 type: "video",
-                id: "Rt7nvTDHXXA",
-                caption: { pt: "Entrega principal", en: "Main deliverable" }
+                vimeoId: "1162365022",
+                fullWidth: true
             },
             {
                 type: "text",
@@ -187,11 +187,7 @@ const projects = [
         content: [
             {
                 type: "video",
-<<<<<<< HEAD
-                id: "eg51pGfBrA8",
-=======
                 id: "KhBn-tHSXBY",
->>>>>>> main
                 caption: { pt: "Entrega principal", en: "Main deliverable" }
             },
             {
