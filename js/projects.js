@@ -407,11 +407,9 @@ const projects = [
             },
            {
                 type: "grid",
-                columns: 3, // 1, 2, 3, ou 4
+                columns: 1, // 1, 2, 3, ou 4
                 assets: [
-                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664733/HAIRSPRAY_BUG_s3oqmn.mp4", span: 2, rowSpan: 2},
-                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664728/Sticker_oritmomechama_zrastq.mp4" },
-                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770664728/Sticker_spark_mbmtou.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771879993/Pausa_Anima%C3%A7%C3%A3o_baixa_de4mzh.mp4" },        
                 ]
             },
             {
@@ -425,8 +423,14 @@ const projects = [
         ],
         credits: {
             pt: {
-                "Cliente": "Hairspray",
-                "Motion Design": "Fernando Villela",
+                "Agência": "NOO",
+                "Cliente": "PLAU",
+                "Animação": "Fernando Villela, Miguel Duarte",
+                "Produção Executiva": "Kathlyn Giaccommini",
+                "Atendimento": "Antonio Carvalho",
+                "Direção de Arte": "Beatriz de Andrade",
+                "Design": "Lousie Favilla, Beatriz de Andrade, Fernando Villela e Miguel Duarte",
+                "Direção": "Márcio Sal",
             },
             en: {
                 "Client": "Google",
