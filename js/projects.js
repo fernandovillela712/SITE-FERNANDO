@@ -226,7 +226,7 @@ const projects = [
                 columns: 3, // 1, 2, 3, ou 4
                 assets: [
                     { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770414091/LAYOUT_TESTE_wedm0t.mp4", span: 2, rowSpan: 2},
-                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770413064/LETTERING_d6ecx4.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770764950/LETTERING_d6ecx4.mp4" },
                     { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770413063/TRANSICOES_yty5ap.mp4" },
                 ]
             },
@@ -333,11 +333,11 @@ const projects = [
                     
                 ]
             },
+            
         ],
         credits: {
             pt: {
-                "Cliente": "A Bodega",
-                "Direção de Arte": "Matheus Lima",
+                "Cliente": "Hairspray",
                 "Motion Design": "Fernando Villela",
             },
             en: {
@@ -347,7 +347,106 @@ const projects = [
                 "Motion Design": "Fernando Villela",
                 "3D": "Judd Buchannan",
             },
+            
+        }  
+    }, // -- FIM
+    //----------------------PROJETO 5
+    // -----------------------//
+    {
+        id: "kimura-sans",
+        title: "Kimura Sans | PLAU",
+        categories: ['Motion Design', '2D'],
+        folder: '../assets/hairspray/',
+        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770769166/KIMURA_PREVIEW_hcy3wk.mp4",
+        content: [
+            {
+                type: "video",
+                id: "W-ecOI26z4A",
+                caption: { pt: "Entrega principal", en: "Main deliverable" }
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "A Kimura Sans é uma tipografia criada pela PLAU para o designer Marcelo Kimura e, posteriormente, disponibilizada ao público. Para o lançamento da fonte, foi desenvolvido um vídeo hero e um sistema completo de comunicação, apresentando a tipografia como uma ferramenta versátil para diferentes contextos, marcas e linguagens visuais.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+           {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770769520/kimura_cena_01_ud3nir.mp4" },
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "O vídeo parte da simulação de um dia de trabalho de um designer, usando a tipografia como protagonista. A narrativa constrói diferentes cenários, marcas e produtos fictícios para demonstrar a adaptabilidade da fonte em múltiplos universos: editorial, sinalização, branding, produtos, apps e espaços.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+             {
+                type: "text",
+                text: { 
+                    pt: "Cada identidade criada funciona como uma prova visual da versatilidade da Kimura Sans, explorando ritmo, composição tipográfica, escala, contraste e movimento. O motion atua como elemento central de conexão entre os universos, transformando tipografia em narrativa visual contínua.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+             {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770769522/carrosel_AKZA_1_yns0d0.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770769520/carrosel_BONDE_1_p5hqf0.mp4" },  
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "Atuei na criação de layouts,motion e animações frame a frame, participando da construção das identidades simuladas e da linguagem de movimento do projeto. Trabalhei na tradução da tipografia em sistemas animados, criando cenas, transições e sequências que reforçam a expressividade, legibilidade e versatilidade da fonte em diferentes contextos visuais.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+           {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771879993/Pausa_Anima%C3%A7%C3%A3o_baixa_de4mzh.mp4" },        
+                ]
+            },
+            {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770769521/kimura_assinatura_ve4l5s.mp4" },        
+                ]
+            },
+            
+        ],
+        credits: {
+            pt: {
+                "Agência": "NOO",
+                "Cliente": "PLAU",
+                "Animação": "Fernando Villela, Miguel Duarte",
+                "Produção Executiva": "Kathlyn Giaccommini",
+                "Atendimento": "Antonio Carvalho",
+                "Direção de Arte": "Beatriz de Andrade",
+                "Design": "Lousie Favilla, Beatriz de Andrade, Fernando Villela e Miguel Duarte",
+                "Direção": "Márcio Sal",
+            },
+            en: {
+                "Client": "Google",
+                "Studio": "JUDD*NANDO",
+                "Art Direction": "Elon Musk",
+                "Motion Design": "Fernando Villela",
+                "3D": "Judd Buchannan",
+            },
+            
         }
+        
+        
     }, // -- FIM
 ]
 
