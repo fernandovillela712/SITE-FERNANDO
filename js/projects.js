@@ -444,6 +444,99 @@ const projects = [
         
         
     }, // -- FIM
+      //----------------------PROJETO 6
+    // -----------------------//
+    {
+        id: "Compasso",
+        title: "Compasso | PLAU",
+        categories: ['Motion Design', '2D'],
+        folder: '../assets/compasso/',
+        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771974431/Compasso_capa_o1s9ax.mp4",
+        content: [
+            {
+                type: "video",
+                id: "eg51pGfBrA8",
+                caption: { pt: "Entrega principal", en: "Main deliverable" }
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "A Compasso é uma tipografia criada pela PLAU com uma proposta de simplicidade, neutralidade e personalidade nos detalhes. A NOO foi convidada para desenvolver a campanha de lançamento da fonte, criando vídeo hero, teaser e peças de desdobramento, apresentando a tipografia como uma ferramenta versátil para o cotidiano, tanto no impresso quanto no digital.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+            {
+                type: "grid",
+                columns: 3, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771976077/Compasso_06_mraweq.mp4", span: 2, rowSpan: 2},
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771881267/Compasso_02_2_xfmore.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771881267/Compasso_GIF_16x9_1_zdqc2w.mp4" },
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "A campanha parte da ideia de ritmo e movimento como atributos centrais da fonte. A linguagem visual conecta a tipografia a referências culturais brasileiras, usando elementos do cotidiano como base narrativa: funk, passinho, prato feito, frescobol, cartazes de rua e texturas gráficas populares.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+             {
+                type: "text",
+                text: { 
+                    pt: "A animação traduz essas referências em uma estética dinâmica e acessível, onde a tipografia ganha corpo, cadência e presença. A simplicidade formal da Compasso permite múltiplas aplicações visuais, enquanto seus detalhes sutis são explorados em sequências animadas, composições tipográficas e desdobramentos para redes sociais.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+             {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771881266/Compasso_04_1_hengz8.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771976077/Compasso_08_lhc6ce.mp4" },  
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "Atuei na produção de parte dos layouts e motion, na tradução dos conceitos de ritmo e movimento em sequências animadas, cenas e transições, garantindo coerência estética e fluidez narrativa ao longo das peças.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+            {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1771881266/Compasso_05_1_g5yulb.mp4" },        
+                ]
+            },
+            
+        ],
+        credits: {
+            pt: {
+                "Agência": "NOO",
+                "Cliente": "PLAU",
+                "Animação": "Fernando Villela, Miguel Duarte",
+                "Produção Executiva": "Kathlyn Giaccommini",
+                "Atendimento": "Antonio Carvalho",
+                "Direção de Arte": "Beatriz de Andrade",
+                "Design": "Lousie Favilla, Beatriz de Andrade, Fernando Villela e Miguel Duarte",
+                "Direção": "Márcio Sal",
+            },
+            en: {
+                "Client": "Google",
+                "Studio": "JUDD*NANDO",
+                "Art Direction": "Elon Musk",
+                "Motion Design": "Fernando Villela",
+                "3D": "Judd Buchannan",
+            },
+            
+        }
+        
+        
+    }, // -- FIM
 ]
 
 
