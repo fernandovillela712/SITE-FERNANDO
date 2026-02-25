@@ -92,7 +92,7 @@ main {
 
 #work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /*change min to change card size!!! */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /*change min to change card size!!! */
     gap: 20px;
     padding: 40px;
     padding-top: 0px;
@@ -270,7 +270,7 @@ main {
     left: 50%;
     transform: translateX(-50%); /* Better breakout method */
 
-    border: solid 1px red;
+    /* border: solid 1px red */
 }
 
 .video-block.is-full-width .u-video-frame {

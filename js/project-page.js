@@ -52,10 +52,10 @@ const Components = {
         return `
         <div class="u-video-frame">
             <iframe 
-                src="https://player.vimeo.com/video/${id}?badge=0&autopause=0" 
+                src="https://player.vimeo.com/video/${id}?autoplay=1" 
                 frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen     
                 style="width:100%; height:100%;"
                 title="Vimeo Video">
             </iframe>
