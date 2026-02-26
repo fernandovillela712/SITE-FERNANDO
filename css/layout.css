@@ -92,7 +92,7 @@ main {
 
 #work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /*change min to change card size!!! */
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr)); /*change min to change card size!!! */
     gap: 20px;
     padding: 40px;
     padding-top: 0px;
@@ -765,4 +765,7 @@ main {
     .about-text h1 {
         font-size: 2.5rem;
     }
+}
+.vermelho {
+    color: #ff3e00;
 }
