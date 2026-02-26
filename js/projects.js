@@ -101,11 +101,15 @@ const projects = [
         content: [
             {
                 type: "video",
-                id: "Rt7nvTDHXXA",
-                caption: { pt: "Entrega principal", en: "Main deliverable" }
+                vimeoId: "1162365022",
+                fullWidth: true
             },
             {
                 type: "text",
+                title: {
+                    pt: "PROCESSO",
+                    en: "PROCESS",
+                },
                 text: { 
                     pt: "Motion design desenvolvido para o Thinking with Google 2025, evento presencial com múltiplos formatos e telas. O projeto consistiu na tradução dos layouts criados pelo estúdio HOOD para animações 2D e 3D.", 
                     en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 

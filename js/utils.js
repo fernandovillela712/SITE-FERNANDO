@@ -1,7 +1,7 @@
 // This function decides how your links are built
 export function getProjectLink(id) {
     // Current way (Local testing)
-    return `/templates/project.html?id=${id}`;
+    return `/projects/index.html?id=${id}`;
     
     // Future way (Deployment)
     // return `/${id}`; 

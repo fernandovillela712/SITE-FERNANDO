@@ -17,8 +17,8 @@ class MyNavbar extends HTMLElement {
                     <div class="nav-menu">
                         <div class="nav-links">
                             <a href="/index.html" class="nav-item" data-label="work">Work</a>
-                            <a href="/about.html" class="nav-item" data-label="about">About</a>
-                            <a href="mailto:you@email.com" class="nav-item contact-btn" data-label="contact">Contact</a>
+                            <a href="/about/index.html" class="nav-item" data-label="about">About</a>
+                            <!--<a href="mailto:you@email.com" class="nav-item contact-btn" data-label="contact">Contact</a>-->
                         </div>
                         
                         <div class="lang-switcher">
