@@ -545,6 +545,136 @@ const projects = [
         
         
     }, // -- FIM
+    //----------------------PROJETO 7
+    // -----------------------//
+    {
+        id: "Frescol",
+        title: "Frescol | NOO",
+        categories: ['Frame-by-frame animation', '2D Animation',],
+        folder: '../assets/frescol/',
+        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135569/Preview_vbutvh.mp4",
+        content: [
+            {
+                type: "video",
+                id: "J63_gcPyURk",
+                caption: { pt: "Entrega principal", en: "Main deliverable" }
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "Frescol é um projeto autoral desenvolvido para a NOO, com foco na exploração dos fundamentos da animação frame a frame. O projeto consiste em um vídeo publicitário fictício para um spray de dores musculares, contando a história de dois amigos em uma situação cotidiana, resolvida a partir do uso do produto.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+             {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772136332/garrafas-2_nqkl9y.mp4" },
+                ]
+            },
+            {
+                type: "grid",
+                columns: 3, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135108/FRESCOL_02_uoxdts.mp4", span: 2, rowSpan: 2},
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/image/upload/v1772136556/frescol_behanceapp_Prancheta_11_1.5x_uq200u.png" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135110/2_CAIXA_FRESCOL_1_mhfh2k.mp4" },
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "O trabalho foi desenvolvido de forma integral, desde a criação do conceito até a execução da animação. Criamos um produto fictício, incluindo naming, identidade visual, logo, embalagem, paleta de cores e tagline, além do desenvolvimento completo dos personagens e do universo visual.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+            },
+            {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/image/upload/v1772135204/Glued_On_The_Wall_Street_Posters_Mockup_2_va0boq.png" },
+                ]
+            },
+             {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135108/1.5_GARRAFA_1_pjw3bp.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135105/5_COLORIZA%C3%87%C3%83O_1_v4ajsu.mp4" },  
+                ]
+            },
+            {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/image/upload/v1772135106/Sem_T%C3%ADtulo-1_uhsexh.png" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/image/upload/v1772135194/frescol_behanceapp_Prancheta_1_1.5x_sngtt1.png" },  
+                ]
+            },
+            {
+                type: "text",
+                text: { 
+                    pt: "A animação foi produzida inteiramente em frame a frame, com processo que envolveu roteiro, storyboard, pencil test, estudo de timing e finalização de quadros. A linguagem visual aposta em traços simplificados, personagens estilizados e cenários mínimos, valorizando o movimento, o ritmo e a leitura clara da ação.", 
+                    en: "This project focused on lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit repellendus placeat ullam, necessitatibus accusantium incidunt ratione veniam quibusdam molestiae debitis reiciendis sequi vel. Praesentium repellendus sapiente deserunt pariatur quasi" 
+                }
+                
+            },
+            {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/image/upload/v1772135107/sketches_a4vgtn.png" },        
+                ]
+            },
+             {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135107/3_JULIAO_TURNAROUND_1_jizfnq.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135107/3.5_JEREMIAS_TURNAROUND_1_tognpl.mp4" },  
+                ]
+            },
+            {
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135108/2.5_ETAPAS_DA_ANIMA%C3%87%C3%83O_1_fc8xyu.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135108/3.8_DETALHES-JULIAO_1_sg3yfu.mp4" },  
+                ]
+            },
+             {
+                type: "grid",
+                columns: 1, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772135184/tela-frames-animati_bufzny.mp4" },        
+                ]
+            },
+            
+        ],
+        credits: {
+            pt: {
+                "Agência": "NOO",
+                "Direção Criativa": "Fernando Villela, Miguel Duarte e Marcio Sal",
+                "Animação": "Fernando Villela, Miguel Duarte",
+                "Design de Personagem": "Fernando Villela",
+                "Deisgn Gráfico": "Miguel Duarte",
+            },
+            en: {
+                "Client": "Google",
+                "Studio": "JUDD*NANDO",
+                "Art Direction": "Elon Musk",
+                "Motion Design": "Fernando Villela",
+                "3D": "Judd Buchannan",
+            },
+            
+        }
+        
+        
+    }, // -- FIM
+
+    
+
 ]
 
 
