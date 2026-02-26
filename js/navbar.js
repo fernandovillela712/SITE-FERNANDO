@@ -1,13 +1,14 @@
 // js/navbar.js
 import { setLanguage } from './utils.js';
-
+import { getRootPath } from './utils.js';
+const root = getRootPath();
 // Define the custom element
 class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav class="navbar">
                 <div class="nav-container">
-                    <a href="/index.html" class="logo">FERNANDO VILLELA</a>
+                    <a href="${root}index.html" class="logo">FERNANDO VILLELA</a>
                     
                     <button class="menu-toggle" aria-label="Toggle Menu">
                         <span class="bar"></span>
@@ -16,8 +17,8 @@ class MyNavbar extends HTMLElement {
 
                     <div class="nav-menu">
                         <div class="nav-links">
-                            <a href="/index.html" class="nav-item" data-label="work">Work</a>
-                            <a href="/about/index.html" class="nav-item" data-label="about">About</a>
+                            <a href="${root}index.html" class="nav-item" data-label="work">Work</a>
+                            <a href="${root}about/index.html" class="nav-item" data-label="about">About</a>
                             <!--<a href="mailto:you@email.com" class="nav-item contact-btn" data-label="contact">Contact</a>-->
                         </div>
                         

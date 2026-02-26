@@ -1,12 +1,16 @@
 // This function decides how your links are built
 export function getProjectLink(id) {
     // Current way (Local testing)
-    return `/projects/index.html?id=${id}`;
-    
-    // Future way (Deployment)
-    // return `/${id}`; 
+    return `./projects/index.html?id=${id}`;
+
 }
 
+export function getRootPath() {
+    // If we are on GitHub Pages subfolder, return the repo name, otherwise root
+    return window.location.hostname.includes('github.io') 
+        ? '/SITE-FERNANDO/' 
+        : '/';
+}
 
 // LANGUAGE
 
