@@ -129,18 +129,22 @@ const projects = [
             },
             {
                 type: "grid",
-                columns: 2, // 1, 2, 3, ou 4
+                columns: 1, // 1, 2, 3, ou 4
                 assets: [
-                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770338072/ThinkWithGoogle_KV05_v2_1_tdvccd.mp4" },
                     { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770341856/ThinkWithGoogle_KV02_1_vyuedn.mp4" }, // Local video
                     //{ type: "video", src: "think-with-google-preview.mp4" }, // Local video
                     
                 ]
             },
             {
-                type: "video",
-                url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1770338072/ThinkWithGoogle_KV04_1_n60t9d.mp4",
-                caption: { pt: "Entrega principal", en: "Main deliverable" }
+                type: "grid",
+                columns: 2, // 1, 2, 3, ou 4
+                assets: [
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772134496/ThinkWithGoogle_KV04_A_1_nc9f7b.mp4" },
+                    { type: "video", url: "https://res.cloudinary.com/dobmgp6ug/video/upload/v1772134496/ThinkWithGoogle_KV04_B_1_xa49gp.mp4" }, // Local video
+                    //{ type: "video", src: "think-with-google-preview.mp4" }, // Local video
+                    
+                ]
             },
             {
                 type: "text",
