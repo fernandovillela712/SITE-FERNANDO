@@ -115,9 +115,14 @@ function renderProject(project, lang) {
                 <h1 class="project-title">${project.title}</h1>
                 <ul class="project-categories">${project.categories.map(c => `<li>${c}</li>`).join('')}</ul>
             </header>
-            <div class="project-body">${contentHTML}</div>
+            <div class="project-body">
+                ${contentHTML}
+            </div>
             ${renderCredits(project.credits, lang)}
-            <footer class="project-footer"><a href="../index.html" class="back-link" data-label="back"></a></footer>
+            <footer class="project-footer">
+                <a href="../index.html" class="footer-link" data-label="back"></a>
+                <a href="../index.html" class="footer-link" data-label="next"></a>
+            </footer>
         </main>
     `;
     translateUI();
