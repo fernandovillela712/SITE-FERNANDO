@@ -29,7 +29,7 @@ export const dictionary = {
         about: "Sobre",
         contact: "Contato",
         back: "Voltar",
-        aboutTitle: "Motion Design",
+        aboutTitle: "Fernando Villela",
         aboutDescription: "Sou motion designer com 10 anos de experiência, atuando como generalista com foco em animação 2D, 3D e ilustração. Trabalho no desenvolvimento de projetos que combinam narrativa visual, motion systems, linguagem de movimento e branding, explorando o motion como ferramenta de comunicação, estrutura visual e construção de identidade. Atualmente, atuo como motion designer na NOO Works, baseado no Rio de Janeiro, participando de projetos para marcas, estúdios e plataformas digitais. Meu trabalho transita entre projetos autorais e comerciais, sempre buscando clareza visual, consistência estética e soluções criativas orientadas por conceito.",
     },  
     en: {
