@@ -451,9 +451,13 @@ main {
 /* PROJECT PAGE FOOTER */
 
 .project-footer {
-    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+    display: flex;
+    justify-content: space-between; /* Pushes Back to left, Next to right */
+    align-items: center;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
     text-align: center;
-    margin: 80px 0px;
+    margin: 80px auto;
+    max-width: 720px;
 }
 
 .footer-link {
@@ -693,10 +697,11 @@ main {
 /* --- ABOUT PAGE CONTAINER --- */
 
 .about-container {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 160px 20px 80px; /* Extra top padding for the navbar */
     animation: fadeIn 0.8s ease forwards;
+    border: solid red 1px;
 }
 
 .about-content {
@@ -704,25 +709,17 @@ main {
     grid-template-columns: 1fr 1.2fr; /* Text side is slightly wider */
     gap: 80px;
     align-items: start;
+    border: solid rgb(85, 255, 0) 1px;
+}
+
+.about-content > div{
+    border: solid rgb(89, 0, 255) 1px;
 }
 
 /* --- IMAGE STYLING --- */
 
 .about-image {
-    position: sticky; /* Image stays in view as you read long bios */
-    top: 160px;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px; /* Matching your project cards */
-    filter: grayscale(100%); /* Optional: pro look, turns color on hover */
-    transition: filter 0.5s ease;
-}
-
-.about-image img:hover {
-    filter: grayscale(0%);
+    width: auto;
 }
 
 /* --- TEXT STYLING --- */
@@ -768,7 +765,9 @@ main {
     transform: translateY(-2px);
 }
 
-
+.vermelho {
+    color: var(--accent-color) !important;
+}
 
 @media (max-width: 900px) {
     .about-content {
@@ -776,17 +775,30 @@ main {
         gap: 40px;
     }
 
-    .about-image {
-        position: relative;
-        top: 0;
-        max-width: 400px; /* Don't let the profile pic get too huge on mobile */
-    }
-
     .about-text h1 {
         font-size: 2.5rem;
     }
 }
 
-.vermelho {
-    color: var(--accent-color) !important;
+/* ______________________________________________________ TOOLTIP ___________________________________________ */
+.custom-tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    pointer-events: none; /* Crucial: clicks go through it */
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    white-space: nowrap;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.custom-tooltip.is-active {
+    opacity: 1;
 }
