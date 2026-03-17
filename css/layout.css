@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /* DEFININDO PESOS */
 
 .roboto-light {
@@ -697,29 +696,38 @@ main {
 /* --- ABOUT PAGE CONTAINER --- */
 
 .about-container {
-    max-width: 1400px;
+    /* max-width: 80%; */
+    /* width: 80%; */
+    height: auto;
     margin: 0 auto;
-    padding: 160px 20px 80px; /* Extra top padding for the navbar */
+    padding: 120px 40px 80px; /* Extra top padding for the navbar */
     animation: fadeIn 0.8s ease forwards;
-    border: solid red 1px;
+    /* border: solid red 1px; */
+
+    align-items: start;
 }
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1.2fr; /* Text side is slightly wider */
-    gap: 80px;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--gap-layout);
     align-items: start;
-    border: solid rgb(85, 255, 0) 1px;
-}
-
-.about-content > div{
-    border: solid rgb(89, 0, 255) 1px;
+    height: 100%;
 }
 
 /* --- IMAGE STYLING --- */
+.about-image-container {
+    position: sticky;
+    overflow: hidden;
+    height: 100%;
+
+}
 
 .about-image {
-    width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
 }
 
 /* --- TEXT STYLING --- */
@@ -733,17 +741,17 @@ main {
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 1.7vw, 1.77rem);
     line-height: 1.7;
     color: var(--faded-color);
     margin-bottom: 20px;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 
 .social-links {
     display: flex;
-    gap: 20px;
+    gap: var(--gap-layout);
     flex-wrap: wrap;
 }
 
@@ -778,6 +786,10 @@ main {
     .about-text h1 {
         font-size: 2.5rem;
     }
+    .about-text p {
+        hyphens: auto;
+
+    }
 }
 
 /* ______________________________________________________ TOOLTIP ___________________________________________ */
@@ -802,3 +814,8 @@ main {
 .custom-tooltip.is-active {
     opacity: 1;
 }
+
+/* * { outline: 1px solid rgba(255, 0, 0, 0.2); }
+.about-container { outline: 1px solid lime !important; }
+.about-content { outline: 1px solid cyan !important; }
+.about-image-container { outline: 1px solid magenta !important; } */
