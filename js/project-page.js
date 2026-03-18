@@ -1,5 +1,5 @@
 import { projects } from './projects.js';
-import { getLanguage } from '/js/utils.js';
+import { getLanguage, getProjectLink } from '/js/utils.js';
 import { translateUI } from './global.js';
 
 /**
@@ -66,8 +66,13 @@ const Components = {
  * MAIN RENDERER
  */
 function renderProject(project, lang) {
+
     const container = document.querySelector('#project-content');
     if (!container) return;
+
+    const currentIndex = projects.findIndex(p => p.id === project.id);
+    const nextProject = projects[currentIndex + 1] || projects[0]; // Loops back to start if at the end
+    const nextProjectUrl = getProjectLink(nextProject.id); 
 
     const contentHTML = project.content.map(block => {
         switch (block.type) {
@@ -115,9 +120,14 @@ function renderProject(project, lang) {
                 <h1 class="project-title">${project.title}</h1>
                 <ul class="project-categories">${project.categories.map(c => `<li>${c}</li>`).join('')}</ul>
             </header>
-            <div class="project-body">${contentHTML}</div>
+            <div class="project-body">
+                ${contentHTML}
+            </div>
             ${renderCredits(project.credits, lang)}
-            <footer class="project-footer"><a href="../index.html" class="back-link" data-label="back"></a></footer>
+            <footer class="project-footer">
+                <a href="../index.html" class="footer-link" data-label="back"></a>
+                <a href="${nextProjectUrl}" class="footer-link" data-label="next" data-tooltip="${nextProject.title}"></a>
+            </footer>
         </main>
     `;
     translateUI();
