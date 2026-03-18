@@ -1,8 +1,7 @@
 // This function decides how your links are built
 export function getProjectLink(id) {
     // Current way (Local testing)
-    return `./projects/index.html?id=${id}`;
-
+    return `./projects/index.html?id=${id}`;Z
 }
 
 export function getRootPath() {
